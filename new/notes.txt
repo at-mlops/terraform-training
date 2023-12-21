@@ -1,0 +1,13 @@
+az acr build --registry workshop282ed0e797c109b07eff42105b5d0f3c --image streamlit --file ./Dockerfile .
+
+
+az ad sp create-for-rbac --name "gerhardCi" --role contributor --scopes "/subscriptions/6d2e3a80-7b47-4bab-a829-b4f4e73a77f5/resourceGroups/RG_at-mlops"              <aws:jarvis-commons> <region:eu-central-1>
+Creating 'contributor' role assignment under scope '/subscriptions/6d2e3a80-7b47-4bab-a829-b4f4e73a77f5/resourceGroups/RG_at-mlops'
+The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
+{
+  "appId": "d7f26dec-0b39-43ae-8ae5-48b62cbc9a94",
+  "displayName": "gerhardCi",
+  "password": "xWl8Q~TtAn3Dd6DINxjNvATwtBt6feu7rrbQ1cI6",
+  "tenant": "44d8cd30-12b4-46ab-82b4-56bec7d7a555"
+}
+
