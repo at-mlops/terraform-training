@@ -16,10 +16,10 @@ resource "azurerm_storage_container" "web" {
 }
 
 resource "azurerm_storage_blob" "blob" {
-  name                   = "test.txt"
+  name                   = "hello.txt"
   content_type           = "text/plain"
   storage_account_name   = azurerm_storage_account.storage_account.name
   storage_container_name = azurerm_storage_container.web.name
   type                   = "Block"
-  source                 = "test.txt"
+  source                 = local_file.hello.filename
 }
