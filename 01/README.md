@@ -1,12 +1,7 @@
 Terraform basic workflow
 ========================
 
-Tasks:
-
-- Run terraform init
+- Use terraform to create a file named "test.txt" with the content "This file
+  was created during the workshop."
 - Which providers are used?
-- Which files are created and what do they mean?
-- Create a terraform plan
-- Save a terraform plan
-- Apply the terraform plan
-- Do the same for a destructive plan
+- Use terraform plan, apply and destroy.
