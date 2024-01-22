@@ -4,4 +4,10 @@ variable "rg_name" {
   default     = "RG_train_terraform_mlops"
 }
 
+variable "location" {
+  type        = string
+  description = "Azure loacation to create resources in"
+  default     = "GermanyWestCentral"
+}
+
 # Create variable "username"
