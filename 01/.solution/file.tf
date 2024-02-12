@@ -1,4 +1,7 @@
+provider "local" {
+}
+
 resource "local_file" "data" {
-  content  = format("This file was created during %s", "the workshop")
-  filename = "${path.module}/data.txt"
+  content  = "This file was created during the workshop"
+  filename = "${path.root}/data.txt"
 }
