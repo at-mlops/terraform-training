@@ -1,1 +1,1 @@
-# Create output "storage_account_name"
+# Create output "full_account_name"
