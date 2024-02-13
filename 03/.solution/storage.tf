@@ -3,7 +3,7 @@ resource "azurerm_storage_account" "storage" {
   resource_group_name      = var.rg_name
   location                 = var.location
   account_tier             = "Standard"
-  account_replication_type = "GRS"
+  account_replication_type = "LRS"
 
   tags = {
     creator = var.username
