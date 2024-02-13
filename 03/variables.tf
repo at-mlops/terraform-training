@@ -6,7 +6,7 @@ variable "rg_name" {
 
 variable "location" {
   type        = string
-  description = "Azure loacation to create resources in"
+  description = "Azure location to create resources in"
   default     = "GermanyWestCentral"
 }
 
