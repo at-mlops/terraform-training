@@ -6,7 +6,8 @@ Create an Azure storage account
 - Note that the storage account name must be unique worldwide across all Azure accounts
 - Modify the storage.tf file to create the storage account with the following settings:
     - the storage account should be located in the Azure region "GermanyWestCentral"
-    - the account replication type should be set to GRS
+    - the account replication type should be set to "LRS"
+    - For further values you might need to set, use the cheapest option
     - the storage account should be attached to the Azure resource group
       defined in the variables.tf file
       (https://developer.hashicorp.com/terraform/language/values/variables#using-input-variable-values)
