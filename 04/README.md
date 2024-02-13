@@ -1,9 +1,15 @@
-Using modules
-=============
+Functions, data and conditions
+==============================
 
-Now you can use your existing terraform code created in the previous task to
-deploy a container app that allows uploading files to the storage container.
+Create a blob container in an existing storage account.
 
-There is a ready-made app that you can use as a terraform module. Modify the
-file app.tf accordingly and make this a directory a fully functional terraform
-project.
+Reference the existing storage account from a previous task or an already
+existing storage account  "atterraformvt5byn74" via a data object.
+
+Create the blob container based on a variable name and a random string.  If the
+resulting name is longer than 12 characters, shorten it to 12 characters (via
+the substr() function).
+
+If the storage account is yours from a previous task, add `storage_account =
+"mine"` to the *container's* metadata. Otherwise add the metadata
+`reuse_storage_account = "yes"` to the container's metadata.
