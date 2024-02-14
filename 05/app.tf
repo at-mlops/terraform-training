@@ -1,3 +1,4 @@
 module "app" {
-  source = "./streamlit-azure-upload/"
+  # TODO: reference the local "streamlit-azure-upload" module
+  source = "???"
 }

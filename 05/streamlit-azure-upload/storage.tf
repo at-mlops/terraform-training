@@ -18,9 +18,17 @@ locals {
 
 data "azurerm_storage_account_blob_container_sas" "sas" {
   connection_string = data.azurerm_storage_account.storage_account.primary_connection_string
-  container_name    = var.storage_container_name
   https_only        = true
 
   start  = timeadd(timestamp(), "-1h")
   expiry = timeadd(timestamp(), "48h")
+
+  permissions {
+    read   = true
+    add    = true
+    create = true
+    write  = true
+    delete = true
+    list   = true
+  }
 }

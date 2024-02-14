@@ -3,13 +3,15 @@ resource "azurerm_log_analytics_workspace" "app" {
 }
 
 resource "azurerm_container_app_environment" "env" {
-  name = format("%s-app-environment", var.resource_prefix)
+  name                       = format("%s-app-environment", var.resource_prefix)
+  log_analytics_workspace_id = azurerm_log_analytics_workspace.app.id
 }
 
 resource "azurerm_container_app" "app" {
-  name                = format("%sapp", var.resource_prefix)
-  resource_group_name = var.rg_name
-  revision_mode       = "Single"
+  name                         = format("%sapp", var.resource_prefix)
+  container_app_environment_id = azurerm_container_app_environment.env.id
+  resource_group_name          = var.rg_name
+  revision_mode                = "Single"
 
   secret {
     name  = "blobsasurl"
