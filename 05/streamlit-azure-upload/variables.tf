@@ -28,5 +28,5 @@ variable "storage_container_name" {
 }
 
 variable "container_image" {
-  default = "docker.io/ghaering/streamlit:latest"
+  default = "atmlopstraining.azurecr.io/streamlit-azure-upload:latest"
 }
