@@ -1,5 +1,5 @@
-resource "random_string" "storage_account_name" {
-  length  = 10
+resource "random_string" "random_part" {
+  length  = 8
   special = false
   upper   = false
 }

@@ -10,13 +10,7 @@ variable "location" {
   default     = "GermanyWestCentral"
 }
 
-variable "storage_account_name" {
-  description = "Name of existing storage account"
-  type        = string
-  default     = null
-}
-
-variable "container_name_prefix" {
-  description = "Prefix of container name"
+variable "username" {
+  description = "Name of the user running terraform"
   type        = string
 }
