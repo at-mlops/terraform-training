@@ -7,6 +7,7 @@ Locals, variables and outputs
 - Create a second resource of type `azurerm_storage_container` and resource name `container` (https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_container). The container name should be "upload" and its access type should be "blob". This container must reference the to be created storage account
 - Create an output named `full_account_name` - the value of this output should be the created storage account's name
 
-Optional:
+Note: Please don't clean up resources created during this task yet! We will need some of them for a follow up task
 
+Optional:
 - When running plan or apply, Terraform will ask you about the value for the `username` variable. Figure out, how to set this value as part of the commands you run
