@@ -1,5 +1,5 @@
 module "app" {
-  source                 = "git::https://github.com/ghaering/streamlit-azure-upload.git//terraform"
+  source                 = "./streamlit-azure-upload/"
   rg_name                = var.rg_name
   location               = var.location
   storage_account_name   = azurerm_storage_account.storage.name
