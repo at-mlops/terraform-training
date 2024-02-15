@@ -13,4 +13,5 @@ If the storage account is yours from a previous task, add `storage_account = "mi
 Hint: Once the container is deployed, you can view its tags in Azure portal. Got to the container and navigate to the menu option "Metadata".
 
 Optional:
+- After you have finished above task, remove the entire container resource from your code and run `terraform plan` again. What happens?
 - Now you can safely `terraform destroy` Terraform configurations of all previous tasks
