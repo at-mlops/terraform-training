@@ -10,7 +10,7 @@ resulting name is longer than 12 characters, shorten it to 12 characters. To ach
 
 If the storage account is yours from a previous task, add `storage_account = "mine"` to the *container's* metadata. Otherwise add the metadata `reuse_storage_account = "yes"` to the container's metadata.
 
-Hint: Once the container is deployed, you can view its tags in Azure portal. Got to the container and navigate to the menu option "Metadata".
+Hint: Once the container is deployed, you can view its tags in Azure portal. Go to the container and navigate to the menu option "Metadata".
 
 Optional:
 - After you have finished above task, remove the entire container resource from your code and run `terraform plan` again. What happens?

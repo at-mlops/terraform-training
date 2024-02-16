@@ -3,8 +3,9 @@ Using modules
 
 There is a terraform module in the folder `streamlit-azure-upload`. Use the module and call it with the necessary parameters (check its variables!). The existing module has a few missing parts that you will need to add before it can be used to make plan and apply work.
 
-The following links are useful here:
+The submodule requires a storage account and container to work. In your root module, create those resources first.
 
+The following links are useful here:
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/storage_account_sas  
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app_environment
 
