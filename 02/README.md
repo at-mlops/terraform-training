@@ -33,3 +33,7 @@ Use terraform to define an [Azure Storage Account](https://registry.terraform.io
 Experiment with ["terraform state ..." commands](https://developer.hashicorp.com/terraform/cli/commands/state)
   - List your terraform state
   - Explore your terraform state and display the values of the different items in the state
+
+
+# Part 3: Destruction
+Destroy your created resources.
